@@ -61,7 +61,21 @@ public class Equipo {
     }
 
     public boolean despedirJugador(Jugador jugador) {
-        
+        for (int i = 0; i < jugadores.length; i++) {
+            if (jugadores[i]==jugador) {
+                
+
+                while (i<jugadores.length-1) {
+                    jugadores[i]=jugadores[i+1];
+                }
+
+                jugadores[jugadores.length]=null;
+                
+            } else{
+                return false;
+            }
+        }   
+        return true;
     }
 
     public int buscarJugador(Jugador jugador) {

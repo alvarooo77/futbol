@@ -1,7 +1,7 @@
 import modelo.Entrenador;
 import modelo.Jugador;
 
-public class App {
+public class App4 {
     public static void main(String[] args) {
         Jugador santiago = new Jugador("Santiago", 4);
         Jugador fran = new Jugador("Fran", 5);
